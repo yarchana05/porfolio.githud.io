@@ -1,0 +1,626 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&family=Kolker+Brush&family=Montserrat&family=Mouse+Memoirs&family=Poppins:ital,wght@0,200;0,300;0,400;1,100;1,200;1,300&family=Ubuntu&display=swap');
+*{
+    
+    top:0;
+    right: 0;
+}
+#first-page{
+    background-image: url("bg6.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-fluid{
+    position: fixed;
+    background-color: crimson;
+    z-index: 1;
+    
+}
+.navbar.sticky{
+    padding: 30px 0;
+    background: rgb(78, 45, 5);
+}
+.navbar-brand{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 5rem;
+
+}
+#navitem:hover{
+    font-weight: bolder;
+ }
+    
+    
+
+.intro{
+    color:white;
+   margin: 200px 170px;
+    padding-bottom: 5rem; 
+}
+b{
+    color:red;
+}
+
+/*media query*/
+@media only screen and (max-width:600px) and (min-width:400px) {
+    
+    .intro{
+        margin:100px 80px;
+        
+    }
+    
+}
+ @media only screen and (min-width:600px) and (max-width:768px){
+    .intro{
+        margin: 120px 95px;
+    
+    }
+    
+ }
+
+/*-----------------------------about page---------------------*/
+.about{
+    text-align: center;
+    padding-bottom: 2rem;
+}
+.photo_copy{
+    padding-left: 15rem;
+}
+.wmi,.wip,.wwm,.git{
+    position: relative;
+    z-index: -1;
+    overflow: hidden;
+    text-align: center;
+    color:red;
+
+}
+.wmi:before,.wip:before,.wwm:before,.git:before{ 
+   text-align: right;
+    margin-left: -50%;
+}
+.wmi:after,.wip:after,.wwm:after,.git:after{
+    margin-left: 7%;
+}
+
+.wmi:before, .wmi:after, .wip:before, .wip:after ,.wwm:before, .wwm:after,.git:before,.git:after{
+    position: absolute;
+    top:60%;
+    overflow: hidden;
+    width:45%;
+    height: 2px;
+    content: "";
+    background-color: black;
+}
+.photo{
+    display: flex;
+    padding-bottom: 2rem;
+    width:80%;
+}
+.personal-intro{
+    padding-left: 6rem;
+}
+ /*media query*/
+ @media only screen and (max-width:600px) and (min-width:400px) {
+    .photo_copy{
+        padding-left: 1rem;
+
+    }
+    .personal-intro{
+        font-size: smaller;
+        width:80%;
+        padding-left: 1rem;
+    }
+    #about-page .photo .personal-intro a,.btn{
+        padding-right: 10rem;
+    }
+    
+ }
+ @media only screen and (max-width:768px) and (min-width:600px) {
+    .photo_copy{
+        padding-left: 7rem;
+
+    }
+    .personal-intro{
+        font-size: smaller;
+        width:80%;
+        padding-left: 2rem;
+    }
+    #about-page .photo .personal-intro a,.btn{
+        padding-right: 10rem;
+    }
+ }
+ @media only screen and (max-width:1030px) and (min-width:768px) {
+    .photo_copy{
+        padding-left: 10rem;
+
+    }
+    .personal-intro{
+        font-size: smaller;
+        width:80%;
+        padding-left: 4rem;
+    }
+    #about-page .photo .personal-intro a,.btn{
+        padding-right: 9rem;
+    }
+}
+
+/* ----------------------------service class -----------------*/
+#service-page{
+       
+        height: 70%;
+        width: 100%;
+        color:white;
+        background-color: black;
+        
+    
+}
+.service{
+    padding-top: 7rem;
+    padding-left: 25rem;   
+    
+}
+.wip:before, .wip:after,.wwm:before,.wwm:after{
+    background-color: white;
+    margin-right: 9%;
+}
+.wip{
+    margin: 3.4rem;
+    color:white;
+    z-index: 1;
+    position: inherit;
+}
+.card-body{
+    
+    background-color: rgb(56, 54, 54);
+    box-sizing: border-box;
+    padding:10rem;
+    text-align: center;
+    margin: 2rem;
+}
+.text{
+    color:white;
+    padding-bottom: 1rem;
+}
+i{
+    color:crimson;
+    font-size: x-large;
+    padding: 1rem;
+}
+.card-body:hover{
+    background-color: crimson;
+    color:white;
+    
+}
+.cardbg:hover i{
+    
+    color: white;
+}
+.cardbg{
+    margin:3rem 2rem;
+    box-sizing: border-box;
+    background-color: black;
+    display: flex;
+}
+.card-body{
+    padding: 10px; 
+}
+.service-detail{
+    padding-bottom: 1rem;
+}
+/*media query*/
+
+@media only screen and (max-width:600px) and (min-width:400px) {
+    
+    .service{
+        padding-top: 4rem;
+        padding-left: 5rem;   
+    } 
+    .service h1{
+        font-size: 2.2rem;
+        padding-left:1rem;
+    }
+    .cardbg{
+        display:block;
+    }
+}
+
+@media only screen and (min-width:600px) and (max-width:768px){
+    .service{
+        padding-top: 4rem;
+        padding-left: 10rem;   
+    } 
+    .service h1{
+        font-size: 2.2rem;
+        padding-left:1rem;
+    }
+    .cardbg{
+     display: block;
+    padding: 1rem;  
+    }
+ }
+ @media only screen and (max-width:1030px) and (min-width:768px)  {
+    .cardbg{
+        margin: 10px;
+        
+    }
+    .service{
+        padding-top: 4rem;
+        padding-left: 14rem;   
+    } 
+    .service h1{
+        font-size: 2.2rem;
+        padding-left:1rem;
+    }
+    .card-body{
+        padding: 3rem;
+        margin: 1rem;
+    }
+ }
+
+
+/*-------------------Skill page-----------------*/
+
+.skills{
+    text-align: center;
+    padding-top: 4rem;
+
+}
+.service_demo{
+    display: flex;
+    justify-content: space-around;
+}
+.demo1,.demo2{
+    width:50%;  
+    padding:3rem; 
+}
+.info{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    line-height: 2;
+}
+
+.line{
+    height:5px;
+    width: 100%;
+    background-color:lightgrey;
+    position: relative;
+
+}
+.line::before{
+    height: 100%;
+    width: 80%;
+    background: crimson;
+    content: "";
+    left:0;
+    top:0;
+    position: absolute;
+
+}
+.html::before{
+    width:90%;
+}
+.css::before{
+    width:60%;
+}
+.js::before{
+    width:40%;
+}
+.php::before{
+    width:70%;
+}
+.mysql::before{
+    width:80%;
+}
+/*media query*/
+@media only screen and (max-width:600px) and (min-width:400px) {
+    .service_demo{
+        display: block;
+    }
+    .demo1,.demo2{
+        width:100%;
+        padding: 1rem;
+    }
+}
+@media only screen and (min-width:600px) and (max-width:768px){
+    .demo1,.demo2{
+        width:100%;
+        padding: 1rem;
+    }
+}
+
+
+/*---------------------- team page---------------------------
+
+#teams-page{
+    background-color: black;
+    
+}
+.title{
+    text-align: center;
+    color: white;
+}
+.wwm{
+    margin-left: 28.5rem;
+}
+
+.teams .carousel .card{
+    background-color: rgb(58, 54, 54);
+    border-radius: 6px;
+    padding: 25px 35px;
+    height: 20%;
+    width: 20%;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.teams .carousel .card:hover{
+    background-color: crimson;
+
+}
+.teams .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.teams .carousel .card .box{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.teams .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid crimson;
+    transition: all 0.3s ease;
+}
+.teams .carousel .card:hover img{
+    border-color: #fff;
+}
+.owl.dot{
+    text-align: center;
+    margin-top: 20px;
+
+}
+.owl.dot{
+    height: 13px;
+    width: 13px;
+    margin: 0;
+    outline: none !important;
+    border-radius: 50%;
+    border: 2px solid crimson!important;
+}
+.owl.dot.active{
+    width:35px;
+    border-radius: 14px;
+
+}
+.owl.dot.active,.owl.dot:hover{
+    background: crimson!important;
+
+}*/
+#team-page{
+    
+    margin:10px;
+    padding: 5px;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(220, 239, 254);
+    z-index: -1;
+}
+
+.slide-content{
+    margin: 0 40px;
+}
+.slide-container{
+    max-width: 1120px;
+    width: 100%;
+    background-color:black;
+    padding: 40px 0;
+}
+
+
+.image-content,.card-content{
+    padding: 10px 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.image-content{
+    row-gap: 5px;
+    position: relative;
+    padding: 25px 0;
+}
+.card{
+    width: 300px;
+    border-radius: 25px;
+    background-color: #fff;
+}
+.card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    background: #fff;
+    padding: 3px;
+    border-radius: 50%;
+
+}
+.card-image .card-img{
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid rgb(102, 132, 230);
+}
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: crimson;
+    border-radius: 25px 25px 0 25px;
+}
+.overlay::after,
+.overlay::before{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: crimson;
+}
+.overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: white;
+}
+.name{
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+
+}
+.dis{
+    font-size: 14px;
+    color:#707070;
+    text-align: center;
+}
+.button{
+    border: none;
+    font-size: 16px;
+    color:#fff;
+    padding: 8px 16px;
+    background-color: #4070f4;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease ;
+}
+.button:hover{
+    background-color: #1951eb;
+}
+ /*---------------contact page-------------------*/
+ .contact .con{
+    text-align: center;
+    color: black;
+    
+ }
+ .container .content{
+    padding-top: 2rem;
+ }
+ .git{
+    margin-left:29rem;
+    
+ }
+ .git:after{
+    width: 2rem;
+    margin-left: 9%;
+ }
+ .git:before{
+    width:2rem;
+    
+ }
+ #name{
+    margin-right: 1rem;
+ }
+ #subject,textarea{
+    width:25rem;
+ }
+ .container .content{
+    display: flex;
+ }
+ .container .content .left-side .user,.location,.envelope{
+    display: flex;
+ }
+ .user1{
+    padding-right: 8vh;
+
+ }
+
+ /*media query*/
+ @media only screen and (max-width:600px) and (min-width:400px) {
+    .git{
+        margin-left: 11rem;
+    }
+    .container .content{
+        display: block;
+     }
+     .right-side{
+        padding: 1rem;
+     }
+     #name{
+        margin-bottom: 1.5rem;
+     }
+    
+}
+@media only screen and (min-width:600px) and (max-width:768px){
+    .git{
+        margin-left: 2rem;
+    }
+    .container .content{
+        display: block;
+     }
+     .right-side{
+        padding: 1rem;
+     }
+     #name{
+        margin-bottom: 1.5rem;
+     }
+     #subject,textarea{
+        width:10rem;
+     }
+}
+@media only screen and (min-width:768px) and (max-width:1028px) {
+    .right-side{
+        width:50%;
+        margin-left: 2rem;
+    }
+    .left-side{
+        width: 50%;
+
+    }
+    #name{
+        margin-bottom: 1.5rem;
+     }
+     #subject,textarea{
+        width:17rem;
+     }
+     .git{
+        margin-left: 16.5rem;
+    }
+}
+
+ /*copy right*/
+
+ .copy-right{
+    background-color: black;
+    color:white;
+    text-align: center;
+    
+ }
+ .copy-right p{
+    width:20rem;
+    margin-left: 21rem;
+ }
+
+ #address{
+    color:crimson;
+ }
+
+ @media only screen and (max-width:600px) and (min-width:400px) {
+    .copy-right p{
+        margin-left: 2rem;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:1028px) {
+    .copy-right p{
+        margin-left: 10rem;
+    }
+}
